@@ -73,8 +73,7 @@ extern CJson* cJson_CreateTrue(void);
 extern CJson* cJson_CreateBool(int b);
 extern CJson* cJson_CreateNull(void);
 extern CJson* cJson_CreateNumber(double num);
-extern CJson* cJson_CreateString(const char *string
-);
+extern CJson* cJson_CreateString(const char *string);
 extern CJson* cJson_CreateArray(void);
 extern CJson* cJson_CreateObject(void);
 
@@ -118,7 +117,7 @@ extern CJson* cJson_Duplicate(CJson *item, int recurse); // ? recurse???
 
 extern CJson* cJson_ParseWithOpts(const char *value, const char **returnParseEnd, int requireNullTerminated);
 
-// ? 缩小 ??
+// ? 压缩 ??
 extern void cJson_Minify(char *json);
 
 // 当赋予整型值时，也要传播到dValue
